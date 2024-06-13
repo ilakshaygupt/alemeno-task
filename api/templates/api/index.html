@@ -15,7 +15,7 @@
         async function uploadImage() {
             const form = document.getElementById('upload-form');
             const formData = new FormData(form);
-            const response = await fetch('/api/urine-analyze/', {
+            const response = await fetch('/urine-analyze/', {
                 method: 'POST',
                 body: formData
             });
